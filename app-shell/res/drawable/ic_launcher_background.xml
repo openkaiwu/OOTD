@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A full-bleed warm blush field. A solid colour deliberately avoids OEM
+     gradient re-sampling that can introduce an unrelated coloured outer ring. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#FFF7FA" />
+</shape>

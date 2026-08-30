@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  A single legacy-compatible drawable prevents OEM launchers from combining an
+  adaptive-icon background with a separately normalised foreground. The inner
+  mark is deliberately inset, so circle and squircle launchers keep it whole.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="54dp" />
+            <gradient
+                android:type="radial"
+                android:centerX="0.34"
+                android:centerY="0.24"
+                android:gradientRadius="96dp"
+                android:startColor="#FFFFF7"
+                android:centerColor="#FFF6F4"
+                android:endColor="#E8E0FF" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_launcher_foreground" />
+</layer-list>

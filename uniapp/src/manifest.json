@@ -1,0 +1,101 @@
+{
+    "name" : "明天穿什么",
+    "appid" : "",
+    "description" : "本地优先的智能衣橱与天气穿搭助手",
+    "versionName" : "0.1.0",
+    "versionCode" : "1",
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "safearea" : {
+            "background" : "#F7F9FC",
+            "bottom" : {
+                "offset" : "none"
+            }
+        },
+        /* 模块配置 */
+        "modules" : {
+            "Camera" : {},
+            "Geolocation" : {
+                "description" : "用于获取当前位置天气并生成穿搭建议"
+            }
+        },
+        "checkPermissionDenied" : true,
+        /* 应用发布信息 */
+        "distribute" : {
+            "icons" : {
+                "android" : {
+                    "hdpi" : "static/branding/android/icon-hdpi-72.png",
+                    "xhdpi" : "static/branding/android/icon-xhdpi-96.png",
+                    "xxhdpi" : "static/branding/android/icon-xxhdpi-144.png",
+                    "xxxhdpi" : "static/branding/android/icon-xxxhdpi-192.png"
+                },
+                "ios" : {
+                    "appstore" : "static/branding/app-icon-1024.png"
+                }
+            },
+            /* android打包配置 */
+            "android" : {
+                "minSdkVersion" : 26,
+                "packagename" : "com.wearing.ootd.internal",
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera\"/>"
+                ]
+            },
+            /* ios打包配置 */
+            "ios" : {},
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "geolocation" : {
+                    "system" : {
+                        "__platform__" : [ "android", "ios" ]
+                    }
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wx57b8851aee561d58",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "用于获取当前位置天气并生成穿搭建议"
+            }
+        },
+        "requiredPrivateInfos" : [ "getLocation" ],
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics": {  
+        "enable": false
+    },
+    "vueVersion" : "3"
+}

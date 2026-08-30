@@ -1,0 +1,40 @@
+{
+	"pages": [
+		{ "path": "pages/home/home", "style": { "navigationStyle": "custom" } },
+		{ "path": "pages/wardrobe/wardrobe", "style": { "navigationStyle": "custom" } },
+		{ "path": "pages/outfits/outfits", "style": { "navigationStyle": "custom" } },
+		{ "path": "pages/profile/profile", "style": { "navigationStyle": "custom" } },
+		{ "path": "pages/add/add", "style": { "navigationBarTitleText": "添加衣物" } },
+		{ "path": "pages/review/review", "style": { "navigationBarTitleText": "确认衣物信息" } },
+		{ "path": "pages/garment/garment", "style": { "navigationStyle": "custom" } },
+		{ "path": "pages/conditions/conditions", "style": { "navigationBarTitleText": "生成新穿搭" } },
+		{ "path": "pages/result/result", "style": { "navigationBarTitleText": "穿搭推荐" } },
+		{ "path": "pages/tryon/tryon", "style": { "navigationBarTitleText": "虚拟试穿" } },
+		{ "path": "pages/weather/weather", "style": { "navigationBarTitleText": "天气穿搭" } },
+		{ "path": "pages/preferences/preferences", "style": { "navigationBarTitleText": "偏好风格" } },
+		{ "path": "pages/data/data", "style": { "navigationBarTitleText": "数据与存储" } }
+		,{ "path": "pages/wardrobe-gaps/wardrobe-gaps", "style": { "navigationBarTitleText": "穿搭好物" } }
+		,{ "path": "pages/feedback/feedback", "style": { "navigationBarTitleText": "意见反馈" } }
+		,{ "path": "pages/about/about", "style": { "navigationBarTitleText": "关于" } }
+		,{ "path": "pages/ai/ai", "style": { "navigationBarTitleText": "AI 助手" } }
+	],
+	"tabBar": {
+		"color": "#8F878B",
+		"selectedColor": "#C77A9A",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "white",
+		"list": [
+			{ "pagePath": "pages/home/home", "text": "首页", "iconPath": "static/icons/tab-home.png", "selectedIconPath": "static/icons/tab-home-active.png" },
+			{ "pagePath": "pages/wardrobe/wardrobe", "text": "衣橱", "iconPath": "static/icons/tab-wardrobe.png", "selectedIconPath": "static/icons/tab-wardrobe-active.png" },
+			{ "pagePath": "pages/outfits/outfits", "text": "穿搭", "iconPath": "static/icons/tab-outfits.png", "selectedIconPath": "static/icons/tab-outfits-active.png" },
+			{ "pagePath": "pages/profile/profile", "text": "我的", "iconPath": "static/icons/tab-profile.svg", "selectedIconPath": "static/icons/tab-profile-active.svg" }
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "明天穿什么",
+		"navigationBarBackgroundColor": "#FFF8FB",
+		"backgroundColor": "#F6F6F6",
+		"backgroundTextStyle": "dark"
+	}
+}

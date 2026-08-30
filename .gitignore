@@ -1,0 +1,36 @@
+# JavaScript dependencies and generated UniApp bundles
+uniapp/node_modules/
+uniapp/dist/
+uniapp/.vite/
+
+# Android generated output
+app-shell/assets/www/
+app-shell/build/
+app-shell/output/
+*.apk
+*.aab
+*.idsig
+
+# Local SDK, emulator and signing material
+.android-sdk/
+.android-avd/
+.android-local/
+.tools/
+*.keystore
+*.jks
+local.properties
+
+# Local configuration and logs
+.env
+.env.*
+!.env.example
+scripts/Set-LocalEnvironment.ps1
+*.log
+*.tmp
+*.swp
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
