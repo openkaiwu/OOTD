@@ -9,6 +9,12 @@
 - `scripts/`：安装 APK、启动或停止 Android 模拟器的辅助脚本。
 - `BUILD_AND_RUN.md`：环境变量、签名、构建、模拟器运行与故障排查说明。
 
+## 界面预览
+
+| 首页 | 衣橱 | 穿搭灵感 | 个人中心 |
+| --- | --- | --- | --- |
+| ![首页](docs/screenshots/home.png) | ![衣橱](docs/screenshots/wardrobe.png) | ![穿搭灵感](docs/screenshots/outfits.png) | ![个人中心](docs/screenshots/profile.png) |
+
 ## 已实现的主要功能
 
 - 本地衣橱、拍照/相册导入、衣物识别辅助、分类与收藏管理。
